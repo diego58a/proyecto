@@ -1,0 +1,311 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(202, 203, 204);
+}
+
+#agg, #aggt, #cont{
+    border: 1px solid black;
+    width: 75%;
+    height: 75%;
+}
+
+#frmalumnos{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    text-align: center;
+    margin-left: 23em;
+}
+
+#lista{
+    display: flex;
+    flex-direction: column;
+    width: 62%;
+    margin-left: 7em;
+}
+
+.campo{
+    text-align: center;
+}
+
+label{
+    font-size: 20px;
+    font-style: italic;
+}
+
+.fotico{
+    width: 80px;
+    height: 80px;
+  }
+
+#aggt, #cont{
+    text-align: center;
+    background-color: white
+}
+
+#cont{
+    margin-top: 2em;
+}
+
+.titulo, #aggt, #cont{
+    background: linear-gradient(to bottom, rgb(190, 17, 17), rgb(120, 10, 10));
+    color: white;
+}
+
+.boton{
+    cursor: pointer;
+}
+
+.boton:hover{
+    background: linear-gradient(to bottom, rgb(190, 17, 17), rgb(120, 10, 10));
+    color: white;
+    padding: 0.435em;
+    transition: 0.7s;
+}
+
+.btnEditar:hover{
+    cursor: pointer;
+    background-color: rgb(233, 201, 40);
+    color: white;
+    padding: 0.235em;
+    transition: 0.7s;
+}
+
+.btnBorrar:hover{
+    cursor: pointer;
+    background-color: rgb(5, 12, 223);
+    color: white;
+    padding: 0.235em;
+    transition: 0.7s;
+}
+
+.btnCons:hover{
+    cursor: pointer;
+    background-color: rgb(5, 177, 16);
+    color: white;
+    padding: 0.235em;
+    transition: 0.7s;
+}
+
+#agg{
+    display: flex;
+    justify-content: space-between;
+}
+
+select{
+    background-color: white;
+    font-size: 12px;
+}
+
+.input1{
+    background-color: rgb(202, 203, 204);
+}
+
+td{
+    background-color: white;
+}
+
+.campo{
+    border: 0px;
+}
+
+.inputfrm{
+    background-color: white;
+    color: black;
+    padding: 0.4em;
+    border-radius: 5em 5em 5em 5em;
+}
+
+#tablecont{
+    border: 1px solid black;
+    display: flex;
+}
+
+.boton{
+    padding: 1em,;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    border: 1px solid black;
+}
+
+td{
+    border: 1px solid black;
+}
+
+th{
+    border: 1px solid black;
+}
+
+.thnotas{
+    background-color: white;
+    border: 0px;
+}
+
+.tdfoto{
+    width: 40px;
+    height: 40px;
+}
+
+#tdnota{
+    text-align: center;
+    max-height: 2em;
+}
+
+#btnX{
+    width: 1.2em;
+    height: 1.2em;
+    background-color: red;
+    text-align: center;
+    font-weight: 900;
+    padding: 1.2em;
+}
+
+#btnX:hover{
+    cursor: pointer;
+    color: white;
+    border: 2px solid rgb(124, 124, 124);
+    transition: 0.21s;
+}
+
+#tdbtn{
+    justify-content: end;
+    align-content: end;
+    height: 5em;
+    max-height: 8em;
+}
+
+#tdbtnx{
+    width: 5%;
+    max-height: 4em;
+    max-width: 4em;
+    margin-left: 17em;
+    border: 0px;
+}
+
+#btntd{
+    margin-left: 89%;
+    width: 120px;
+    height: 30px;
+    max-width: 120px;
+    max-height: 30px;
+    font-size: 18px;
+    border: 1px solid rgb(rgb(197, 12, 12));
+    box-shadow: 1px 2px 3px 0px black;
+    background: linear-gradient(to bottom, rgb(21, 200, 18), rgb(5, 116, 23));
+    border-radius: 5% 5% 5% 5%;
+}
+
+#btntd:hover{
+    color: white;
+    border: 1px solid rgb(192, 189, 189);
+    box-shadow: 1px 2px 3px 0px rgb(21, 200, 18);
+    background: linear-gradient(to bottom, rgb(31, 236, 27), rgb(8, 168, 35));
+    cursor: pointer;
+    font-size: 19px;
+    transition: 0.2s;
+}
+
+#tablanotas{
+    width: 100%;
+    height: 42em;
+}
+
+.materia{
+    text-align: center;
+    font-size: auto;
+    max-width: 18px;
+    max-height: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#trdatos{
+    max-height: 2em;
+    width: 60%;
+    max-width: 50%;
+}
+
+#arriba{
+    display: flex;
+    width: 56.5%;
+}
+
+#arribader{
+    display: flex;
+    width: 3em;
+    max-width: 3em;
+    max-height: 2.7em;
+    margin-left: 45em;
+    justify-content: center;
+    border: 0px;
+}
+
+#arribasec{
+    display: flex;
+    margin-bottom: 2em;
+}
+
+#tablaCons{
+    margin-top: 2em;
+}
+
+.labelnotas{
+    background-color: white;
+}
+
+  /*evento ventana modal
+  .arribasec{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+  .modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+    .arriba{
+        margin: auto;
+        width: 90%;
+        max-width: 600px;
+        max-height: 90%;
+        background-color: #fff;
+        border-radius: 6px;
+        padding: 3em 2.5em;
+        display: grid;
+        gap: 1em;
+        place-items: center;
+        grid-auto-columns: 100%;
+        transform: var(--transform);
+        transition:var(--transition);
+}
+
+.btnX{
+    text-decoration: none;
+    color: #fff;
+    background-color: #F26250;
+    padding: 1em 3em;
+    border: 1px solid ;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}

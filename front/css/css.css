@@ -1,0 +1,171 @@
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: 10em;
+    background: linear-gradient(to bottom, rgb(190, 17, 17), rgb(120, 10, 10)); /* Gradiente de rojo a un tono más oscuro */
+}
+
+#logo{
+    width: 20%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+}
+
+#logoimg{
+    width: 9em;
+    height: 7em;
+}
+
+#titulo{
+    color: white;
+    font-size: 1.5em;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid white;
+    border-radius: 16px;
+    text-shadow: 4px 4px 6px black;
+}
+
+#info{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: 6.3em;
+}
+
+/* Estilo base del botón */
+#botoninfo{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff; /* Color del texto */
+    background: linear-gradient(to bottom, rgb(153, 13, 13), rgb(120, 10, 10)); /* Gradiente de rojo a un tono más oscuro */
+    border: 1px solid red; /* Borde rojo oscuro */
+    border-radius: 5px; /* Esquinas redondeadas */
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  
+  #logonube{
+    width: 10em;
+    height: 10em;
+  }
+
+
+  #regreso{
+    text-align: center;
+    color: white;
+  }
+  
+  /* Efecto de sombra al pasar el ratón */
+  #botoninfo:hover {
+    background: linear-gradient(to bottom, rgb(120, 10, 10), rgb(153, 13, 13)); /* Invertir gradiente al pasar el ratón */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  }
+  
+  /* Pseudo-elemento para el efecto de borde inferior */
+  #botoninfo::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.5); /* Borde inferior blanco transparente */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+  }
+  
+  /* Efecto de borde inferior al pasar el ratón */
+  #botoninfo:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  #subbarra{
+    margin-top: 0.3em;
+    padding: 2em 2em;
+    background: linear-gradient(to bottom, rgb(144, 28, 7), rgb(78, 6, 6)); /* Gradiente de rojo a un tono más oscuro */
+    display: flex;
+    justify-content: center;
+  }
+
+  .boton{
+    max-width: 10em;
+    max-height: 10em;
+  }
+
+  #noticias{
+    background-color: #c7c7c7;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .articulo{
+    border: 1px solid black;
+    background-color: #f7f7f7;
+    color: #333;
+    box-shadow: 0 0 6px rgba(0,0,0,.3);
+    text-align: left;
+    font-size: .9em;
+    line-height: 1.6;
+    margin: 1em;
+    transition: 0.5s;
+    display: flex;
+  }
+
+  .articulo:hover{
+    transform: scale(1.030);
+    transition: 0.5s;
+}
+
+  h2{
+    width: 30%;
+    text-align: center;
+  }
+
+  p{
+    width: 20%;
+    font-size: 12px;
+  }
+
+  .img{
+    width: 42%;
+    height: 33em;
+  }
+
+  .tituloart{
+    text-align: center;
+  }
+
+  footer{
+    background: linear-gradient(to bottom, rgb(144, 28, 7), rgb(78, 6, 6)); /* Gradiente de rojo a un tono más oscuro */
+    width: 100%;
+    height: 5em;
+    border-radius: 0 0 16px 16px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .copy{
+    margin-left: 40%;
+    color: white;
+  }

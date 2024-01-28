@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/agregar.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="aggt">
+        <h1 class="titulo">Agregar</h1>
+    </div>
+    
+    <div id="formulario">
+        <form id="frmalumnos">
+            <label for="codigo">Código: </label><br>
+            <input class="inputfrm" type="text" name="codigo" id="codigo" placeholder="Ingresar codigo..."><br>
+            <label for="nombre">Nombre: </label><br>
+            <input class="inputfrm" type="text" name="nombre" id="nombre" placeholder="Ingresar nombre..."><br>
+            <label for="apellido">Apellido: </label><br>
+            <input class="inputfrm" type="text" name="apellido" id="apellido" placeholder="Ingresar apellido..."><br>
+            <label for="cedula"> Cedula: </label><br>
+            <input class="inputfrm" type="text" name="cedula" id="cedula" placeholder="Ingresar cedula..."><br>
+            <label for="grado">Año: </label><br>
+            <input class="inputfrm" type="text" name="grado" id="grado" placeholder="Ingresar año..."><br>
+            <label for="foto">Foto: </label><br>
+            <input class="inputfrm" type="file" name="foto" id="foto"><br>
+            <img src="img/default.png" id="imgDefault" class="fotico" style="display:flex; justify-content: center; margin-left: 15.400em;"><br>
+            <input type="hidden" name="id_alumno" id="id_alumno" value="-1">
+            <input type="submit" value="Agregar" id="btnOk" class="boton">
+            <input type="reset" value="Cancelar" id="btnCancelar" class="boton"><br>
+        </form>
+    </div>
+        
+    <div id="cont">
+        <h1 class="titulo">Consultar</h1>
+    </div>
+    <div id="lista">
+        <table>
+          <thead>    
+        <frameset>
+            <input type="text" name="busca" id="busca" placeholder="buscar por cedula">
+            <button id="btnBusca" class="boton" class="boton">Buscar</button>
+        </frameset>
+              
+              <tr>
+               <th class="thnotas">Num</th>
+               <th class="thnotas">Código</th>
+               <th class="thnotas">Nombre</th>
+               <th class="thnotas">Apellido</th>
+               <th class="thnotas">Cédula</th>
+               <th class="thnotas">Año académico</th>
+               <th class="thnotas">Foto</th>
+               <th class="thnotas" colspan="3"></th>
+             </tr>
+           </thead>
+           <tbody id="tablaDatos">
+
+           </tbody>
+         
+          </table>
+      </div>
+
+    <div class="materiaLista" id="materiasLista"></div>
+
+
+
+<section id="tablaCons" class="arribasec">
+    <section id="arribasec">
+        <table id="arriba" class="arriba">
+        <tr id="trdatos">
+            <td>
+                <label class="labelnotas" for="tdcodigo">Codigo</label>
+                <input type="text" placeholder="codigo...">
+            </td>
+            <td>
+                <label class="labelnotas" for="tdnombre">Nombre</label>
+                <input type="text" placeholder="nombre...">
+            </td>
+            <td>
+                <label class="labelnotas" for="tdapellido">Apellido</label>
+                <input type="text" placeholder="apellido...">
+            </td>
+            <td>
+                <label class="labelnotas" for="tdcedula">Cedula</label>
+                <input type="text" placeholder="cedula...">
+            </td>
+            <td>
+                <label class="labelnotas" for="tdgrado">Año</label>
+                <input type="text" placeholder="año...">
+            </td>
+            <td>
+                <label for="tdfoto"></label>
+                <img src="img/default.png" id="foto" class="tdfoto">
+            </td>
+        </tr>
+    </table>
+    <table id="arribader">
+        <tr>
+            <td id="tdbtnx">
+                <button id="btnX" class="btnX">X</button>
+            </td>
+        </tr>
+    </table>
+</section>
+    
+    <table id="tablanotas">
+        <tr>
+            <td colspan="6" id="tdnota"><h1 style="background-color: white;">Notas</h1></td>
+        </tr>
+        <tr>
+            <th>Materias</th>
+            <th>Notas 1 lapso</th>
+            <th>Notas 2 lapso</th>
+            <th>Notas 3 lapso</th>
+            <th>Promedio</th>
+            <th>Definitiva</th>
+        </tr>
+        <tr>
+            <td class="materia">Castellano</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="materia">Matematicas</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="materia">Proyecto</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="materia">Ingles</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="materia">Deporte</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="materia">Ciencias</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="6" id="tdbtn">
+                <button id="btntd">Aceptar</button>
+            </td>
+        </tr>
+    </table>
+
+</section>
+    
+    <script src="js/app.js"></script>
+    <script src="js/boton.js"></script>
+</body>
+</html>
